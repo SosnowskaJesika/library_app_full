@@ -10,22 +10,20 @@ CREATE TABLE books
     created_at      text
 );
 
--- CREATE TABLE authors
--- (
---     id         INTEGER PRIMARY KEY AUTOINCREMENT,
---     name       text NOT NULL,
---     country    text NOT NULL,
---     updated_at text,
---     created_at text
--- );
+CREATE TABLE authors
+(
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    name       text NOT NULL,
+    country    text NOT NULL,
+    updated_at text,
+    created_at text
+);
 
--- CREATE TABLE book_authors
--- (
---     id         INTEGER PRIMARY KEY AUTOINCREMENT,
---     book_id    INTEGER NOT NULL,
---     author_id  INTEGER NOT NULL,
---     updated_at text,
---     created_at text
--- );
-
-ALTER TABLE books RENAME TO old_books
+CREATE TABLE book_authors
+(
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    book_id    INTEGER NOT NULL,
+    author_id  INTEGER NOT NULL,
+    updated_at text,
+    created_at text
+);
